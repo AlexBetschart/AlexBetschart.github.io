@@ -8,13 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="output.css">
   </head>
-  <body class="bg-white-400">
+  
+  <body>
+    <header>
     <nav class="p-5 bg-orange-400 shadow md:flex md:items-center md:justify-between">
       
       <div class="flex justify-between items-center">
         <span class="text-2xl font-[Poppins] cursor-pointer hover:text-green-500 duration-500 my-6 md:my-0">
-          <img class="h-10 inline" alt="logo" src="assets\placeholder1.webp">
+          
+          <a href="#">
+             <img class="h-10 inline" alt="logo" src="assets\placeholder1.webp">
           The Logo Depot
+        </a>
         </span>
       
 
@@ -23,6 +28,7 @@
         </span>
 
       </div>
+
       <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-orange w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7  md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration:500">
         <li class="mx-4 my-6 md:my-0">
           <a href="#" class="text-xl hover:text-green-500 duration-500">About</a>
@@ -34,16 +40,22 @@
           <a href="#" class="text-xl hover:text-green-500 duration-500">Pricing</a>
         </li>
       </ul>
-    </nav>
-    
+    </nav> 
+    </header>
+
+
+    <footer>
+      <div>
+        Hello
+      </div>
+    </footer>
 
     
-    <script src="" async defer></script>
-<script>
+  <script>
     function Menu(e){
       let list = document.querySelector('ul');
-      let nav = document.querySelector('nav')
-      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100'), list.classList.add('bg-orange-400'),nav.classList.remove('shadow')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'),nav.classList.add('shadow'))
+      let nav = document.querySelector('nav');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100'), list.classList.add('bg-orange-400'),list.classList.remove('z-[-1]'),list.classList.add('z-[10]'), nav.classList.remove('shadow')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'),list.classList.remove('z-[10]'),list.classList.add('z-[-1]'),nav.classList.add('shadow'));
     }
   </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
